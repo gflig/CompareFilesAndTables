@@ -1,5 +1,7 @@
 package compare;
 
+import org.testng.Assert;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -23,8 +25,6 @@ public class CompareFiles {
             if (!arrayList1.contains(s)) {
                 System.out.println("Not in " + filePath + ": " + s);
                 comparisonResult = false;
-            } else {
-//                System.out.println(s + " in file 2");
             }
         }
         return comparisonResult;
@@ -40,11 +40,14 @@ public class CompareFiles {
         boolean comparisonResult1 = compareData(arrayList1, arrayList2, filePath1);
         boolean comparisonResult2 = compareData(arrayList2, arrayList1, filePath2);
 
+        String assertMessage;
+        String expectedMessage = "Files are identical";
         if (!comparisonResult1 || !comparisonResult2) {
-            System.out.println("Files are NOT identical");
-        } else {
-            System.out.println("Files are identical");
-        }
+            assertMessage = "Files are NOT identical";
 
+        } else {
+            assertMessage = "Files are identical";
+        }
+        Assert.assertEquals(assertMessage, expectedMessage, assertMessage);
     }
 }
