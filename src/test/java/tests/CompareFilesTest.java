@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class CompareFilesTest {
-    @Test
+    //@Test
     public void compareFiles() throws IOException {
         //Set the paths of the files to compare
 //        String filePath1 = "C:\\Users\\g_fli\\QA\\CompareCSVFiles\\TestCSV_1.csv";
