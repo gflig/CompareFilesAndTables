@@ -10,7 +10,7 @@ public class CompareFilesTest {
     public void compareFiles() throws IOException {
         //Set the paths of the files to compare
         String filePath1 = "C:\\Users\\g_fli\\QA\\CompareFilesAndTables\\Sales_Records_10000_1.csv";
-        String filePath2 = "C:\\Users\\g_fli\\QA\\CompareFilesAndTables\\Sales_Records_10000_2.csv";
+        String filePath2 = "C:\\Users\\g_fli\\QA\\CompareFilesAndTables\\Sales_Records_10000_1.csv";
 
 //        String filePath1 = "Sales_Records_10000_1.csv";
 //        String filePath2 = "Sales_Records_10000_2.csv";
