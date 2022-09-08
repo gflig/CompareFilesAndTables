@@ -47,8 +47,6 @@ public class CompareTables {
 
     //This methode will call Open DB connection method, execute SQL query and will call Close DB connection method
     public void compareTables() throws SQLException {
-        System.out.println("Before Connection");
-
         // Open Connection to the DB
         Connection connection = openDbConnection();
 
@@ -67,7 +65,5 @@ public class CompareTables {
 
         // Close Connection to the DB
         closeDbConnection(connection);
-
-        System.out.println("After Connection");
     }
 }
